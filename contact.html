@@ -3,49 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me | Abdullah Hassan Assiri</title>
+  <title>Contact | Abdullah Hassan Assiri</title>
+  <meta name="description" content="Contact Abdullah Hassan Assiri by email, Saudi or Egypt phone, LinkedIn, GitHub, or Instagram.">
+  <meta property="og:title" content="Contact | Abdullah Hassan Assiri">
+  <meta property="og:description" content="Let's connect — MIS graduate open to business, data, systems, ERP, and front-end opportunities.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/myPic.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="brand">Abdullah A.</a>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="fields.html">My Fields</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html" class="brand" aria-label="Abdullah Hassan Assiri — Home">
+        <span class="brand-mark" aria-hidden="true">AA</span>
+        <span class="brand-text">
+          <span class="brand-name">Abdullah Assiri</span>
+          <span class="brand-role">MIS Graduate</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav class="main-nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="index.html#skills" data-nav="skills">Skills</a>
+        <a href="index.html#projects" data-nav="projects">Projects</a>
+        <a href="index.html#journey" data-nav="journey">Journey</a>
+        <a href="fields.html" data-nav="fields">Fields</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page-content">
-    <section class="content-card contact-card">
-      <h1>Contact Me</h1>
-      <div class="contact-grid">
-        <div class="contact-item">
-          <h2>Saudi Arabia Phone</h2>
-          <a href="tel:+966592828120">0592828120</a>
+  <main id="main" class="page-main">
+    <div class="container">
+      <header class="page-hero reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s connect</h1>
+        <p>Open to conversations about Business Analyst, Data Analyst, Systems Analyst, ERP/Odoo, and Front-End opportunities.</p>
+      </header>
+
+      <div class="contact-layout">
+        <div class="contact-cta reveal">
+          <p>The fastest way to reach me is email. Use the copy buttons if you prefer not to open an app right away.</p>
+          <a class="btn btn-primary" href="mailto:abdoassiri707@gmail.com">Email Abdullah</a>
         </div>
-        <div class="contact-item">
-          <h2>Egypt Phone</h2>
-          <a href="tel:+201008918179">01008918179</a>
-        </div>
-        <div class="contact-item">
-          <h2>Email</h2>
-          <a href="mailto:abdoassiri707@gmail.com">abdoassiri707@gmail.com</a>
-        </div>
+
+        <ul class="contact-list">
+          <li class="contact-item reveal">
+            <div>
+              <p class="mini-label">Email</p>
+              <a href="mailto:abdoassiri707@gmail.com">abdoassiri707@gmail.com</a>
+            </div>
+            <button class="copy-btn" type="button" data-copy="abdoassiri707@gmail.com">Copy</button>
+          </li>
+          <li class="contact-item reveal">
+            <div>
+              <p class="mini-label">Saudi Arabia</p>
+              <a href="tel:+966592828120">+966 59 282 8120</a>
+            </div>
+            <button class="copy-btn" type="button" data-copy="+966592828120">Copy</button>
+          </li>
+          <li class="contact-item reveal">
+            <div>
+              <p class="mini-label">Egypt</p>
+              <a href="tel:+201008918179">+20 100 891 8179</a>
+            </div>
+            <button class="copy-btn" type="button" data-copy="+201008918179">Copy</button>
+          </li>
+          <li class="contact-item reveal">
+            <div>
+              <p class="mini-label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/abdullah-assiri-04a214325/" target="_blank" rel="noopener noreferrer">linkedin.com/in/abdullah-assiri-04a214325</a>
+            </div>
+          </li>
+          <li class="contact-item reveal">
+            <div>
+              <p class="mini-label">GitHub</p>
+              <a href="#">Add your GitHub profile URL here</a>
+            </div>
+          </li>
+          <li class="contact-item reveal">
+            <div>
+              <p class="mini-label">Instagram</p>
+              <a href="https://www.instagram.com/abdullah_hassan_assiri/" target="_blank" rel="noopener noreferrer">@abdullah_hassan_assiri</a>
+            </div>
+          </li>
+          <li class="contact-item reveal">
+            <div>
+              <p class="mini-label">Facebook</p>
+              <a href="https://www.facebook.com/abdullah.assiri.120017" target="_blank" rel="noopener noreferrer">facebook.com/abdullah.assiri.120017</a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="social-grid">
-        <a class="social-card" href="https://www.facebook.com/abdullah.assiri.120017" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a class="social-card" href="https://www.instagram.com/abdullah_hassan_assiri/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a class="social-card" href="https://www.linkedin.com/in/abdullah-assiri-04a214325/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <p>© Abdullah Hassan Assiri</p>
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Abdullah Hassan Assiri</p>
+        <p class="footer-tag">MIS Graduate | Business &amp; Technology</p>
+      </div>
+      <nav class="footer-links" aria-label="Social">
+        <a href="https://www.linkedin.com/in/abdullah-assiri-04a214325/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:abdoassiri707@gmail.com">Email</a>
+      </nav>
+      <p class="footer-copy">© <span data-year></span> Abdullah Hassan Assiri. All rights reserved.</p>
+    </div>
   </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top"><span aria-hidden="true">↑</span></button>
+  <script src="script.js" defer></script>
 </body>
 </html>

@@ -3,48 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Fields | Abdullah Hassan Assiri</title>
+  <title>Fields | Abdullah Hassan Assiri</title>
+  <meta name="description" content="Career focus areas for Abdullah Hassan Assiri: business analysis, data analysis, systems analysis, ERP/Odoo, and front-end development.">
+  <meta property="og:title" content="Fields | Abdullah Hassan Assiri">
+  <meta property="og:description" content="Areas of interest across business, data, systems, ERP, and front-end development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/myPic.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="fields">
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="brand">Abdullah A.</a>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="fields.html">My Fields</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html" class="brand" aria-label="Abdullah Hassan Assiri — Home">
+        <span class="brand-mark" aria-hidden="true">AA</span>
+        <span class="brand-text">
+          <span class="brand-name">Abdullah Assiri</span>
+          <span class="brand-role">MIS Graduate</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav class="main-nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="index.html#skills" data-nav="skills">Skills</a>
+        <a href="index.html#projects" data-nav="projects">Projects</a>
+        <a href="index.html#journey" data-nav="journey">Journey</a>
+        <a href="fields.html" data-nav="fields">Fields</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page-content">
-    <section class="content-card fields-card">
-      <h1>My Fields</h1>
-      <div class="grid cards-grid">
-        <article class="field-card">
-          <h2>Business Analyst</h2>
-          <p>Interested in understanding business requirements, processes, problems, and translating business needs into practical solutions.</p>
+  <main id="main" class="page-main">
+    <div class="container">
+      <header class="page-hero reveal">
+        <p class="eyebrow">Career focus</p>
+        <h1>My fields</h1>
+        <p>These are areas of interest I am preparing for — not current job titles.</p>
+      </header>
+
+      <div class="fields-grid">
+        <article class="field-card reveal">
+          <p class="card-kicker">Area of interest</p>
+          <h3>Business Analysis</h3>
+          <p>Understanding business needs, improving processes, and turning ideas into clear, practical requirements.</p>
+          <p class="field-skills"><strong>Relevant skills:</strong> requirements analysis, process analysis, communication.</p>
         </article>
-        <article class="field-card">
-          <h2>Data Analyst</h2>
-          <p>Interested in analyzing data, discovering useful insights, and supporting better business decisions.</p>
+        <article class="field-card reveal">
+          <p class="card-kicker">Area of interest</p>
+          <h3>Data Analysis</h3>
+          <p>Exploring data, cleaning it, and identifying insights that support better decisions.</p>
+          <p class="field-skills"><strong>Relevant skills:</strong> SQL, Excel, visualization, basic statistics.</p>
         </article>
-        <article class="field-card">
-          <h2>Odoo / ERP Consultant</h2>
-          <p>Interested in ERP systems, business processes, and implementing Odoo solutions that connect different business operations.</p>
+        <article class="field-card reveal">
+          <p class="card-kicker">Area of interest</p>
+          <h3>Systems Analysis</h3>
+          <p>Looking at how information and workflows move through an organization.</p>
+          <p class="field-skills"><strong>Relevant skills:</strong> systems analysis, process mapping, ERP concepts.</p>
         </article>
-        <article class="field-card">
-          <h2>Front-End Developer</h2>
-          <p>Interested in creating clean, responsive, and user-friendly web interfaces using modern front-end technologies.</p>
+        <article class="field-card reveal">
+          <p class="card-kicker">Career focus</p>
+          <h3>ERP / Odoo</h3>
+          <p>Interested in ERP systems, business workflows, and connected operational solutions.</p>
+          <p class="field-skills"><strong>Relevant skills:</strong> ERP concepts, Odoo, process analysis.</p>
+        </article>
+        <article class="field-card reveal">
+          <p class="card-kicker">Career focus</p>
+          <h3>Front-End Development</h3>
+          <p>Building clean, responsive, and user-friendly interfaces that make digital experiences clearer.</p>
+          <p class="field-skills"><strong>Relevant skills:</strong> HTML, CSS, JavaScript, responsive design.</p>
         </article>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <p>© Abdullah Hassan Assiri</p>
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Abdullah Hassan Assiri</p>
+        <p class="footer-tag">MIS Graduate | Business &amp; Technology</p>
+      </div>
+      <nav class="footer-links" aria-label="Social">
+        <a href="https://www.linkedin.com/in/abdullah-assiri-04a214325/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© <span data-year></span> Abdullah Hassan Assiri. All rights reserved.</p>
+    </div>
   </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top"><span aria-hidden="true">↑</span></button>
+  <script src="script.js" defer></script>
 </body>
 </html>

@@ -3,36 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | Abdullah Hassan Assiri</title>
+  <title>About | Abdullah Hassan Assiri</title>
+  <meta name="description" content="About Abdullah Hassan Assiri, a Management Information Systems graduate focused on business analysis, data analysis, ERP/Odoo, and front-end development.">
+  <meta property="og:title" content="About | Abdullah Hassan Assiri">
+  <meta property="og:description" content="MIS graduate working at the intersection of business, data, and technology.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/myPic.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="about">
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="brand">Abdullah A.</a>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="fields.html">My Fields</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html" class="brand" aria-label="Abdullah Hassan Assiri — Home">
+        <span class="brand-mark" aria-hidden="true">AA</span>
+        <span class="brand-text">
+          <span class="brand-name">Abdullah Assiri</span>
+          <span class="brand-role">MIS Graduate</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav class="main-nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="index.html#skills" data-nav="skills">Skills</a>
+        <a href="index.html#projects" data-nav="projects">Projects</a>
+        <a href="index.html#journey" data-nav="journey">Journey</a>
+        <a href="fields.html" data-nav="fields">Fields</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container page-content">
-    <section class="content-card about-card">
-      <h1>About Me</h1>
-      <p>
-        I am a Management Information Systems (MIS) graduate with a strong interest in combining business and technology. My background helps me understand business processes, technology needs, and the value of practical solutions.
-      </p>
-      <p>
-        I enjoy exploring business analysis, data analysis, ERP systems, and Odoo. I am also developing my skills in front-end development to support clear user experiences and project communication.
-      </p>
-    </section>
+  <main id="main" class="page-main">
+    <div class="container">
+      <header class="page-hero reveal">
+        <p class="eyebrow">About</p>
+        <h1>Abdullah Hassan Assiri</h1>
+        <p>Management Information Systems graduate interested in business analysis, data analysis, systems, ERP/Odoo, and front-end development.</p>
+      </header>
+
+      <article class="page-card reveal">
+        <p>I am a Management Information Systems (MIS) graduate with a strong interest in combining business and technology. My background helps me understand business processes, technology needs, and the value of practical solutions.</p>
+        <p>I enjoy exploring business analysis, data analysis, SQL, ERP systems, and Odoo. I am also developing my skills in front-end development to support clear user experiences and project communication.</p>
+        <p>I want to work where business needs, data, and systems meet — not as a generic template developer, but as someone who can translate between operations and technology.</p>
+        <div class="subpage-nav hero-actions">
+          <a class="btn btn-primary" href="index.html#skills">View skills</a>
+          <a class="btn btn-secondary" href="index.html#projects">View projects</a>
+          <a class="btn btn-ghost" href="contact.html">Contact</a>
+        </div>
+      </article>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <p>© Abdullah Hassan Assiri</p>
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Abdullah Hassan Assiri</p>
+        <p class="footer-tag">MIS Graduate | Business &amp; Technology</p>
+      </div>
+      <nav class="footer-links" aria-label="Social">
+        <a href="https://www.linkedin.com/in/abdullah-assiri-04a214325/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="https://www.instagram.com/abdullah_hassan_assiri/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="mailto:abdoassiri707@gmail.com">Email</a>
+      </nav>
+      <p class="footer-copy">© <span data-year></span> Abdullah Hassan Assiri. All rights reserved.</p>
+    </div>
   </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top"><span aria-hidden="true">↑</span></button>
+  <script src="script.js" defer></script>
 </body>
 </html>
